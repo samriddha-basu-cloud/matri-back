@@ -1,0 +1,11 @@
+runtime: python39
+
+handlers:
+- url: /.*
+  script: auto
+
+instance_class: F2
+
+env_variables:
+  PYTHONUNBUFFERED: 'true'
+  GOOGLE_APPLICATION_CREDENTIALS: 'service-account-file.json'
